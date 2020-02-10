@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-    <script type="text/javascript"
-	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +48,7 @@
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">HeatMap</h1>
             <!-- <div id="vizContainer" style="width:800px; height:700px;"></div> -->
             <div>
-                <img src="../static/images/heatmap.png" style="height: 700px; width: 1000px;"alt="Heat Map">
+                <img src="../static/images/heatmap.png" style="height: 700px; width: 1000px;" alt="Heat Map">
             </div>
         </div>
     </div>
@@ -56,8 +58,8 @@
         <div class="w3-content">
             <h1 class="w3-center w3-jumbo" style="color:black; margin-bottom:64px">Border Crossing Pie Chart</h1>
 
-            <div id="myDiv2" style="position: relative; width: 600px; height: 400px;"></div>
-
+            <!-- <div id="myDiv2" style="position: relative; width: 600px; height: 400px;"></div> -->
+            <div id="chartdiv" style="width: 100%; height: 500px;"></div>
         </div>
     </div>
 
@@ -92,10 +94,12 @@
             <h1 class="w3-center w3-jumbo" style="color:black; margin-bottom:64px">Code</h1>
             <div class="row">
                 <div class="column">
-                    <img src="../static/images/border_model.png" style="height: 400px; width: 600px;"alt="Border Model">
+                    <img src="../static/images/border_model.png" style="height: 400px; width: 600px;"
+                        alt="Border Model">
                 </div>
                 <div class="column">
-                    <img src="../static/images/neural_network.png" style="height: 400px; width: 600px;"alt="Neural Network">
+                    <img src="../static/images/neural_network.png" style="height: 400px; width: 600px;"
+                        alt="Neural Network">
                 </div>
             </div>
         </div>
@@ -126,7 +130,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script src="../static/js/border_donut.js"></script>
+    <!-- <script src="../static/js/border_donut.js"></script> -->
+    <script src="../static/js/pie_in_pie.js"></script>
     <script src="../static/js/border_count.js"></script>
     <script src="../static/js/gdp_lines.js"></script>
     <script src="../static/js/prediction.js"></script>
